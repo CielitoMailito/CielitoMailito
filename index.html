@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head> 
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Feliz Cumpleaños, Cielito!</title>
@@ -11,56 +12,47 @@
             background-color: #ffebef;
             margin: 0;
             padding: 0;
+        
+            
+
         }
+        body {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    background: url('https://i.pinimg.com/originals/6b/9f/43/6b9f435bbbb3770195c9678c601b81d6.jpg');
+    background-repeat: repeat;
+}
+
+        h1 {
+    color: #ff4d6d;
+    font-size: 3em;
+    margin-top: 50px;
+    border-bottom: 5px solid #ff6b81; /* Borde decorativo */
+    padding-bottom: 10px;
+    text-shadow:2px 2px 5px rgba(0, 0, 0, 0.3);
+}
 
         h1 {
             color: #ff4d6d;
             font-size: 3em;
             margin-top: 50px;
+            text-shadow:2px 2px 5px rgba(0, 0, 0, 0.3)
         }
 
         p {
-            color: #ff6b81;
+            color: #cf4056;
             font-size: 1.5em;
+            
         }
 
-        .heart-container {
-            position: relative;
-            margin: 100px auto 50px;
-            width: 100px;
-            height: 100px;
-        }
 
-        .heart {
-            width: 100px;
-            height: 100px;
-            background-color: #ff4d6d;
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: rotate(-45deg);
-            transform-origin: 0 100%;
-        }
-
-        .heart:before,
-        .heart:after {
-            content: "";
-            width: 100px;
-            height: 100px;
-            background-color: #ff4d6d;
-            border-radius: 50%;
-            position: absolute;
-        }
-
-        .heart:before {
-            top: -50px;
-            left: 0;
-        }
-
-        .heart:after {
-            left: 50px;
-            top: 0;
-        }
 
         .message {
             font-size: 1.2em;
@@ -71,7 +63,7 @@
         .footer {
             margin-top: 50px;
             font-size: 1em;
-            color: #999;
+            color: #5e2929;
         }
 
         .image-container {
@@ -83,17 +75,61 @@
             height: auto;
             border-radius: 10px;
         }
+
+        .heart {
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.image-container img {
+        border-radius: 20px; /* Bordes redondeados */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    }
+
+    body
+
+.heart {
+    font-size: 100px;
+    color: #777777;
+    animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
     </style>
 </head>
+
 <body>
+    
     <h1>Feliz Cumpleaños, Cielito</h1>
     <p>Eres asombrosa, que lo pases bien en tu día.</p>
 
-    <div class="heart-container">
-        <div class="heart"></div>
-    </div>
+    <div class="heart">❤️</div>
 
     <p class="message">Gracias por hacerme parte de tu vida</p>
+
+    
+    
+
+<!--Imagenes de las esquinas-->
+<div class="image-container">
+    <img src="https://i.pinimg.com/564x/82/d7/d9/82d7d97de5d87f270cd344d4e669dcdd.jpg" alt="Decoración" style="position: fixed; top: 0; right: 0; width: 150px; z-index: 100;">
+    <img src="https://i.pinimg.com/564x/f9/a3/10/f9a310362a70fc9567c9941339bdeb56.jpg" alt="Decoración" style="position: fixed; top: 0; left: 0; width: 150px; z-index: 100;">
+</div>
 
     <!-- Imagen desde la URL proporcionada -->
     <p>Toma un pastel para celebrar tu cumpleaños, preciosa</p>
@@ -103,35 +139,88 @@
         
     <p>Toma tus regalitos, mi nena</p>
 
-        <img src="https://i.pinimg.com/564x/90/30/bc/9030bced5b0f141adf9376bb5b18d4c0.jpg">
+    <div class="image-container">        
+    <img src="https://i.pinimg.com/564x/90/30/bc/9030bced5b0f141adf9376bb5b18d4c0.jpg">
+    </div>
         
 
     <p>Ábrelos a ver qué son</p>
+    <div class="image-container">
 
         <img src="https://i.pinimg.com/564x/64/43/9e/64439e31d22c08fa34a38181fc9dee4f.jpg">
+    </div>
 
     <p>Oh, no, ¿Está vacío?</p>
+    <div class="image-container">
 
         <img src="https://i.pinimg.com/564x/d5/35/78/d535781babef518c93bec2852d120110.jpg">
-
+    </div>
     <p>Espera, hay algo, miralo</p>
+    <div class="image-container">
 
         <img src="https://i.pinimg.com/564x/ff/3c/55/ff3c5514f4ce5b015ea96d7dc8949c38.jpg">
-
+</div>
     <p>Aquí estoy, quiero dedicarte un poema en este día tan especial, mi amor. 
         Eres como una rosa, hermosa, frágil y radiante. Eres como el cielo, porque me gusta mirarte.
         Eres un pequeño trozo de felicidad, por eso me gustaría besarte.
         Perdón, los poemas no son el fuerte de Dudu, te amo.
     </p>
-
+    <div class="image-container">
         <img src="https://i.pinimg.com/736x/f9/5c/13/f95c13020414e0424aaabb810c02a29d.jpg">
-
+    </div>
 
     <p>Cierra los ojitos y pide un deseo</p>
-        
+     <div class="image-container">  
         <img src="https://i.pinimg.com/564x/93/26/a9/9326a94c93b9cc0b95878f70119c489b.jpg">
+     </div>
+
+     <p>No Bubu, explotaste la tienda con tantas compras D:</p>
+     <div class="image-container">
+        <img src="https://i.pinimg.com/564x/92/70/86/927086080a707e5d623e9f648ec84ceb.jpg">
+        </div>
+        <p>Pero al final del día no puedo enojarme contigo porque te amo tanto, que solo quisiera consentirte.</p>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/564x/14/37/49/143749dd1b3c056399b7acf8fc45a682.jpg">
+        </div>
+
+        <p>Tu deseo es tener tus cositas, lo sé</p>
+
+    <div class="image-container">
+        <img src="https://i.pinimg.com/736x/87/f1/3f/87f13f89b7dc6f3f1ba1c31728c0a5ba.jpg">
+    </div>
+    <p>Sin embargo, todos tenemos un deseo, y mi deseo eres tú.</p>
+    <div class="image-container">
+        <img src="https://i.pinimg.com/564x/f9/03/5a/f9035af4e747f9d9b5505e2a94420d07.jpg">
+
+    </div>
+    
+
+<p>Feliz cumple, mi amor</p>
+
+<div class="image-container">
+
+    <img src="https://i.pinimg.com/564x/94/c0/0e/94c00ed8a972fe93a457c7492b6237ac.jpg">
+</div>
+
+<p>Para terminar, quiero decirte que haces que mi corazón se acelere cuando
+    te miro y veo en tus ojitos todo mi mundo, mi vida, mi futuro, y mi felicidad, pero más
+    allá de eso, te veo a ti, la persona más preciosa que he podido conocer, no podría 
+    describir ni en un millón de años todo lo que siento al pensarte, pero siempre que te
+    estoy pensando termino enamorado de ti, porque me encanta amarte.
+</p>
+
+<div class="image-container">
+
+    <img src="https://i.pinimg.com/564x/93/b2/49/93b249cbfe8bec8bd0939d5338976263.jpg">
+</div>
+
 
   <div class="footer">Con mucho amor, Dudu</div>
+  
+  
+</style>
+
+   
+
 </body>
 </html>
-
